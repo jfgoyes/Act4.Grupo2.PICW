@@ -12,3 +12,21 @@ function ingresarValor(val) {
     pantalla.value += val; // Validamos cualquier valor ingresado en la pantalla.
     ultimaAccionCalculada = false; // Se haga un reinicio de la acción luego de ingresar un valor nuevo.
 }
+
+// Definimos una función la cual va a identificar si el operador ingresado es válido, +,-,*,/,%,.
+function operadorCalculadora(val) {
+    return ['+','-','*','/','%','.'].includes(val);
+}
+
+// Establecemos la funcion para borrar todo el contenido de la pantalla.
+function limpiarPantalla() {
+    pantalla.value = "";
+    ultimaAccionCalculada = false;
+}
+
+// Establecemos la funcion que se va a encargar de borrar un caracter ingresado en la calculadora.
+function eliminarCaracter() {
+    if (!ultimaAccionCalculada) { // Definimos que esto se realice unicamente si no hubo una accion previamente calculada.
+        pantalla.value = pantalla.value.slice(0, -1);
+    }
+}
