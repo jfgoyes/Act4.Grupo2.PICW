@@ -39,6 +39,52 @@
                 <strong>FECHA:</strong> 05/06/2025
             </p>
         </div>
+        <!-- Contenedor de la calculadora -->
+         <!-- Titulo de la calculadora -->
+         <div class="text-center p-4 fs-4">
+            <h3><strong>Calculadora JavaScript implementada</strong></h3>
+         </div>
+         <!-- Pantalla de la calculadora -->
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="card shadow p-3" style="width: 320px;">
+                <input id="display" class="form-control mb-3" placeholder="0" readonly onkeydown="return false" oninput="handleManualInput()"/>
+                <!-- Botones de la calculadora -->
+                <div class="row g-2">
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">CA</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de pagina -->
+        <div class="text-center p-4">
+            <footer class="py-3 mt-5 fs-6">
+                <p>
+                    © Universidad de las Fuerzas Armadas ESPE | Todos los derechos reservados 2025
+                </p>
+            </footer>
+        </div>
     </div>
     <script src="./public/lib/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
     <script src="./public/js/calculadora.js"></script>
