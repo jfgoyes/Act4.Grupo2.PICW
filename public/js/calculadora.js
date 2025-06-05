@@ -30,3 +30,31 @@ function eliminarCaracter() {
         pantalla.value = pantalla.value.slice(0, -1);
     }
 }
+
+// Definimos las operaciones de la calculadora.
+function calcularOperacion () {
+    try {
+        // Definimos que si no existe nada en pantalla entonces no se haga nada.
+        if (pantalla.value === "") return;
+        // Asi mismo, si ya se realizó el cálculo de una operacion, que no se repita el calculo otra vez.
+        if (ultimaAccionCalculada && !/[+\-*/%]/.test(pantalla.value)) {
+        return;
+        }
+        // Establecemos una variable para definir las operaciones ingresadas.
+        const expresionNumerica = pantalla.value;
+
+        // Verificamos si es una division para cero.
+        if (/\b\/\s*0+(\.0*)?\b/.test(expresionNumerica)) {
+            alert("No es posible una división para cero.") // Si es una división para cero, que se muestre la alerta.
+            return;
+        }
+
+        // Validamos la expresión matemática.
+        const resultadoCalculo = eval(expresionNumerica); 
+        pantalla.value = resultadoCalculo;
+        ultimaAccionCalculada = true;
+        // Definimos que en caso de error, se muestre un mensaje.
+    } catch (error) {
+        alert("La expresión usada no es válida.")
+    }
+}
