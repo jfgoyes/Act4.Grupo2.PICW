@@ -50,30 +50,30 @@
                 <input id="display" class="form-control mb-3" placeholder="0" readonly onkeydown="return false" oninput="handleManualInput()"/>
                 <!-- Botones de la calculadora -->
                 <div class="row g-2">
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">CA</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="limpiarPantalla()">CA</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="eliminarCaracter()">C</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" onclick="appendValue('(')">(</button></div>
+                    <div class="col-3"><button class="btn btn-warning w-100" onclick="appendValue(')')">)</button></div>
 
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('7')">7</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('8')">8</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('9')">9</button></div>
+                    <div class="col-3"><button class="btn btn-secondary w-100" onclick="appendValue('/')">/</button></div>
 
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('4')">4</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('5')">5</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('6')">6</button></div>
+                    <div class="col-3"><button class="btn btn-secondary w-100" onclick="appendValue('*')">*</button></div>
 
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('1')">1</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('2')">2</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('3')">3</button></div>
+                    <div class="col-3"><button class="btn btn-secondary w-100" onclick="appendValue('-')">-</button></div>
 
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
-                    <div class="col-3"><button class="btn btn-danger w-100" onclick="clearDisplay()">btn</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('0')">0</button></div>
+                    <div class="col-3"><button class="btn btn-primary w-100" onclick="appendValue('.')">.</button></div>
+                    <div class="col-3"><button class="btn btn-danger w-100" onclick="calcularOperacion()">=</button></div>
+                    <div class="col-3"><button class="btn btn-secondary w-100" onclick="appendValue('+')">+</button></div>
                 </div>
             </div>
         </div>
